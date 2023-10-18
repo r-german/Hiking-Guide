@@ -8,7 +8,6 @@ ScrollSmoother.create({
     ignoreMobileResize: true,
 });
 
-ScrollTrigger.normalizeScroll(true);
 let leftTextElems = gsap.utils.toArray('.left-text');
 leftTextElems.forEach(leftTextElem => {
     gsap.fromTo(leftTextElem, {opacity: 0}, {
