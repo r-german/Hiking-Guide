@@ -1,9 +1,9 @@
 // gsap
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollSmoother);
 
 ScrollSmoother.create({
     smooth: 3,
-    smoothTouch: 3,
+    smoothTouch: 0.1,
     effects: true,
     ignoreMobileResize: true,
     normalizeScroll: true,
@@ -59,6 +59,7 @@ gsap.fromTo('.left-img', {opacity: 0}, {
 });
 
 gsap.matchMedia().add('(min-width: 992px)', () => {
+    gsap.registerPlugin(ScrollTrigger);
     let textBlocks = gsap.utils.toArray('.block__block-text');
     textBlocks.forEach(textBlock => {
         gsap.fromTo(textBlock, {y: -150}, {
