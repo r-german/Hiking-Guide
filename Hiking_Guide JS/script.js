@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 ScrollSmoother.create({
     smooth: 3,
-    smoothTouch: 0.1,
+    smoothTouch: 3,
     effects: true,
     ignoreMobileResize: true,
     normalizeScroll: true,
