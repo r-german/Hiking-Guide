@@ -7,8 +7,7 @@ let smoother = ScrollSmoother.create({
     smoothTouch: 0.1,
     // сглаживание прокрутки для сенсорных устройств (по умолчанию 0 секунд);
     effects: true,
-    normalizeScroll: true,
-    // ignoreMobileResize: true,
+    ignoreMobileResize: true,
     // при изменении "viewport"-высоты на 25% (например, из-за появления адресной строки на мобильных) срабатывает
     // "ScrollTrigger.refresh()" => перерасчёт начальной/конечной позиции элементов, к которым применяется плагин "ScrollTrigger";   
     // свойство "ignoreMobileResize" отключает для сенсорных устройств "ScrollTrigger.refresh()"
