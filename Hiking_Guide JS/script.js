@@ -9,54 +9,54 @@ ScrollSmoother.create({
     normalizeScroll: true,
 });
 
-let leftTextElems = gsap.utils.toArray('.left-text');
-leftTextElems.forEach(leftTextElem => {
-    gsap.fromTo(leftTextElem, {opacity: 0}, {
-        opacity: 1,
-        scrollTrigger: {
-            trigger: leftTextElem,
-            start: 'bottom bottom',
-            end: 'bottom top',
-            scrub: true
-        }
-    });
-});
+// let leftTextElems = gsap.utils.toArray('.left-text');
+// leftTextElems.forEach(leftTextElem => {
+//     gsap.fromTo(leftTextElem, {opacity: 0}, {
+//         opacity: 1,
+//         scrollTrigger: {
+//             trigger: leftTextElem,
+//             start: 'bottom bottom',
+//             end: 'bottom top',
+//             scrub: true
+//         }
+//     });
+// });
 
-let rightTextElems = gsap.utils.toArray('.right-text');
-rightTextElems.forEach(rightTextElem => {
-    gsap.fromTo(rightTextElem, {opacity: 0}, {
-        opacity: 1,
-        scrollTrigger: {
-            trigger: rightTextElem,
-            start: 'bottom bottom',
-            end: 'bottom top',
-            scrub: true
-        }
-    });
-});
+// let rightTextElems = gsap.utils.toArray('.right-text');
+// rightTextElems.forEach(rightTextElem => {
+//     gsap.fromTo(rightTextElem, {opacity: 0}, {
+//         opacity: 1,
+//         scrollTrigger: {
+//             trigger: rightTextElem,
+//             start: 'bottom bottom',
+//             end: 'bottom top',
+//             scrub: true
+//         }
+//     });
+// });
 
-let rightImgElems = gsap.utils.toArray('.right-img');
-rightImgElems.forEach(rightImgElem=> {
-    gsap.fromTo(rightImgElem, {opacity: 0}, {
-        opacity: 1,
-        scrollTrigger: {
-            trigger: rightImgElem,
-            start: 'top bottom',
-            end: 'center center',
-            scrub: true
-        }
-    });
-});
+// let rightImgElems = gsap.utils.toArray('.right-img');
+// rightImgElems.forEach(rightImgElem=> {
+//     gsap.fromTo(rightImgElem, {opacity: 0}, {
+//         opacity: 1,
+//         scrollTrigger: {
+//             trigger: rightImgElem,
+//             start: 'top bottom',
+//             end: 'center center',
+//             scrub: true
+//         }
+//     });
+// });
 
-gsap.fromTo('.left-img', {opacity: 0}, {
-    opacity: 1,
-    scrollTrigger: {
-        trigger: '.left-img',
-        start: 'top bottom',
-        end: 'center center',
-        scrub: true
-    }
-});
+// gsap.fromTo('.left-img', {opacity: 0}, {
+//     opacity: 1,
+//     scrollTrigger: {
+//         trigger: '.left-img',
+//         start: 'top bottom',
+//         end: 'center center',
+//         scrub: true
+//     }
+// });
 
 gsap.matchMedia().add('(min-width: 992px)', () => {
     gsap.registerPlugin(ScrollTrigger);
