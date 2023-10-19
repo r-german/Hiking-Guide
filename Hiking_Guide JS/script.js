@@ -1,11 +1,12 @@
 // gsap
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+ScrollTrigger.normalizeScroll(true);
+
 ScrollSmoother.create({
     smooth: 3,
     smoothTouch: 0.1,
     effects: true,
     ignoreMobileResize: true,
-    normalizeScroll: ScrollTrigger.isTouch
 });
 
 let leftTextElems = gsap.utils.toArray('.left-text');
