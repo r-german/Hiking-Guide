@@ -1,6 +1,7 @@
 // gsap
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 ScrollTrigger.normalizeScroll(true);
+ScrollTrigger.config({ ignoreMobileResize: true });
 
 ScrollSmoother.create({
     smooth: 3,
