@@ -4,11 +4,14 @@ ScrollSmoother.create({
     smooth: 3,
     smoothTouch: 0.1,
     effects: true,
-    ignoreMobileResize: true,
+    // ignoreMobileResize: true,
 });
 
 ScrollTrigger.normalizeScroll(true);
-ScrollTrigger.config({ ignoreMobileResize: true });
+ScrollTrigger.config({
+  limitCallbacks: true,
+  ignoreMobileResize: true,
+});
 
 let leftTextElems = gsap.utils.toArray('.left-text');
 leftTextElems.forEach(leftTextElem => {
