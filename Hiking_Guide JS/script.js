@@ -7,7 +7,6 @@ ScrollSmoother.create({
     smoothTouch: 0.1,
     effects: true,
     preventDefault: true,
-    normalizeScroll: true,
     ignoreMobileResize: true,
 });
 
