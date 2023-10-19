@@ -4,9 +4,8 @@ ScrollTrigger.normalizeScroll(true);
 
 ScrollSmoother.create({
     smooth: 3,
-    smoothTouch: 0.1,
+    // smoothTouch: 0.1,
     effects: true,
-    preventDefault: true,
     ignoreMobileResize: true,
 });
 
