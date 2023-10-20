@@ -110,7 +110,6 @@ html, body {
 header {
   overflow: hidden;
   min-height: 100vh;
-  min-height: 100svh;
   display: flex;
   align-items: center;
   position: relative;
@@ -251,7 +250,7 @@ header .container .header__title2 {
     margin-bottom: calc(23px + 12 * (100vw - 280px) / 711);
   }
   .block .container .block__block-img {
-    padding-bottom: calc(260px + 205.6 * (100vw - 280px) / 711);
+    padding-bottom: min(calc(260px + 205.6 * (100vw - 280px) / 711), 100svh);
   }
   .block_1 .container .block__block-img img {
     -o-object-position: 0 100%;
