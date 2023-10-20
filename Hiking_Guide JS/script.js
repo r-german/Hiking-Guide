@@ -7,7 +7,7 @@ if (ScrollTrigger.isTouch === 1) {
 
 ScrollSmoother.create({
     smooth: 3,
-    smoothTouch: 1,
+    smoothTouch: 5,
     effects: true,
     ignoreMobileResize: true,
 });
