@@ -143,13 +143,13 @@ header .header__bg {
   z-index: -1;
 }
 header .header__branch {
-  -o-object-position: 34% 0%;
-     object-position: 34% 0%;
+  -o-object-position: 34% 100%;
+     object-position: 34% 100%;
 }
 @media (orientation: portrait) {
   header .header__branch {
-    -o-object-position: 90% 0%;
-       object-position: 90% 0%;
+    -o-object-position: 90% 100%;
+       object-position: 90% 100%;
   }
 }
 header .header__raindrops {
@@ -251,7 +251,7 @@ header .container .header__title2 {
     margin-bottom: calc(23px + 12 * (100vw - 280px) / 711);
   }
   .block .container .block__block-img {
-    padding-bottom: max(calc(260px + 205.6 * (100vw - 280px) / 711), 100svh);
+    padding-bottom: min(calc(260px + 205.6 * (100vw - 280px) / 711), 100svh);
   }
   .block_1 .container .block__block-img img {
     -o-object-position: 0 100%;
