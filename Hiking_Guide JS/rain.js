@@ -2,17 +2,17 @@ let canvas = document.getElementsByClassName('rain')[0];
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-// let portrait = window.matchMedia("(orientation: portrait)");
-// portrait.addListener(function(e) {
-// 	if(e.matches) {
-// 		canvas.width = window.innerWidth;
-// 		canvas.height = window.innerHeight;
-// 	}
-// 	else {
-// 		canvas.width = window.innerWidth;
-// 		canvas.height = window.innerHeight;
-// 	}
-// });
+let portrait = window.matchMedia("(orientation: portrait)");
+portrait.addListener(function(e) {
+	if(e.matches) {
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+	}
+	else {
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+	}
+});
 
 window.addEventListener("resize", function(){
 	canvas.width = window.innerWidth;
