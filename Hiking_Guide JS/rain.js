@@ -5,10 +5,16 @@ canvas.height = window.innerHeight;
 let portrait = window.matchMedia("(orientation: portrait)");
 portrait.addListener(function(e) {
 	if(e.matches) {
+		canvas.width = 'none';
+		canvas.height = 'none';
+		void canvas.offsetHeight;
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
 	}
 	else {
+		canvas.width = 'none';
+		canvas.height = 'none';
+		void canvas.offsetHeight;
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
 	}
