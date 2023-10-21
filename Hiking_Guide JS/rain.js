@@ -14,11 +14,6 @@ portrait.addListener(function(e) {
 	}
 });
 
-// window.addEventListener("resize", function(){
-// 	canvas.width = window.innerWidth;
-// 	canvas.height = window.innerHeight;
-// });
-
 let c = canvas.getContext('2d');
 
 function randomNum(max, min) {
