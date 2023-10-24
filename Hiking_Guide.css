@@ -151,11 +151,10 @@ header .header__bg {
   z-index: -1;
 }
 header .header__branch {
-  object-fit: contain;
   -o-object-position: 34% 50%;
      object-position: 34% 50%;
 }
-@media (orientation: portrait) {
+@media (max-width: 991.9) {
   header .header__branch {
     -o-object-position: 90% 50%;
        object-position: 90% 50%;
